@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="estilo.css">
     <title>NitroGym</title>
 </head>
 <body>
-    <!--MENU-->
         <div class="contenedor-header">
             <header>
-            <h1>GYM<span class="txtrojo">NITRO</span></h1>
+            <a href="#inicio"><h1>GYM<span class="txtrojo">NITRO</span></h1></a> 
             <nav id="nav">
                 <a href="#inicio"  onclick="seleccionar()">Inicio</a>
                 <a href="#nosotros"onclick="seleccionar()">Nosotros</a>
@@ -23,17 +22,15 @@
             </nav>
 
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
-
             <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars" ></i>
             </div>
             </header>
         </div>
-
 
         <section id="inicio" class="inicio">
             <div class="contenido-seccion">
@@ -44,29 +41,19 @@
                     <i class="fa-solid fa-circle-chevron-down"></i>
                 </a>
                 </div>
-
                 <div class="opciones">
                     <div class="opcion">Fitness</div>
-
                     <div class="opcion">Crossfit</div>
-
                     <div class="opcion">boxeo</div>
-
-                    <div class="opcion">Yoga</div>
-
-                    <div class="opcion">Cardio</div>
-
                     <div class="opcion">Natacion</div>
+                    <div class="opcion">Cardio</div>
+                    <div class="opcion">Ciclismo</div>
                 </div>
             </div>
         </section>
 
-
         <section id="nosotros" class="nosotros">
             <div class="fila">
-                <div class="col">
-                    <img src="img/nosotros01.png" alt="">
-                </div>
                 <div class="col">
                     <div class="contenedor-titulo">
                         <div class="numero">01</div>
@@ -79,26 +66,22 @@
                     <p>creemos en el poder del movimiento para transformar vidas. Somos más que un gimnasio, somos una comunidad dedicada a ayudarte a alcanzar tus metas de bienestar físico y mental. Con instalaciones modernas, entrenadores certificados y una amplia variedad de clases y programas personalizados, ofrecemos el espacio perfecto para que desarrolles fuerza, resistencia y confianza.</p>
                 </div>
             </div>
-            <hr>
+            
             <div class="fila-nosotros">
                 <div class="col1">
                     <span class="frase">
-                        <span class="txtRojo">ENTRENA</span> DIFERENTE
+                        <span class="txtrojo">ENTRENA</span> DIFERENTE
                     </span>
-                    <h2>ENTRENA <span class="txtRojo">GRATIS</span> HOY!</h2>
+                    <h2>PRIMER MES 50% DE DESCUENTO!</h2>
                 </div>
                 <div class="col2">
-                    <button>PASE LIBRE</button>
+                    <button onclick="window.location.href='#contacto'">ANOTATE HOY!</button>
                 </div>
             </div>
         </section>
 
-
-
         <section class="servicios" id="servicios">
             <div class="contenido-seccion">
-                <div class="fila">
-                    <div class="col">
                         <div class="contenedor-titulo">
                             <div class="numero">02</div>
                             <div class="info">
@@ -106,80 +89,70 @@
                                 <h2>SERVICIOS</h2>
                             </div>
                         </div>
-                        <p class="p-especial">Transforma Tu Vida Con La Mejor Experiencia</p>
-                        <p>En Nitro, ofrecemos una variedad de servicios diseñados para que alcances tus objetivos de salud y bienestar. Descubre nuestras actividades más destacadas.</p>
-                    </div>
-                    <div class="col">
-                        <img src="img/servicios.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="info-servicios">
-                <table>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-person-walking"></i>
-                            <h3><span class="txtRojo">Clases </span> de Fitness</h3>
-                            <p>Ejercítate en un ambiente dinámico y divertido con rutinas diseñadas para mejorar tu fuerza, resistencia y flexibilidad.</p>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-dumbbell"></i>
-                            <h3><span class="txtRojo">Clases </span> de Crossfit</h3>
-                            <p>Desafía tus límites con entrenamientos intensos y variados que combinan fuerza, cardio y habilidad.</p>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-mitten"></i>
-                            <h3><span class="txtRojo">Clases </span> de Boxeo</h3>
-                            <p>Mejora tu técnica, coordinación y resistencia mientras liberas el estrés con entrenamientos de alto impacto.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-person-swimming"></i>
-                            <h3><span class="txtRojo">Clases </span> de Natacion</h3>
-                            <p>Fortalece tu cuerpo y mejora tu salud cardiovascular con ejercicios completos y de bajo impacto.</p>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-heart-circle-bolt"></i>
-                            <h3><span class="txtRojo">Clases </span> de Cardio</h3>
-                            <p>Quema calorías y aumenta tu energía con sesiones llenas de movimiento y diversión.</p>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-person-biking"></i>
-                            <h3><span class="txtRojo">Clases </span> de Ciclismo</h3>
-                            <p>Disfruta de un entrenamiento desafiante que combina música motivadora con técnicas de pedaleo efectivas.</p>
-                        </td>
-                    </tr>
-                </table>
+                        <div class="info-servicios">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-person-walking"></i>
+                                        <h3>Clases de<span class="txtrojo"> Fitness</span></h3>
+                                        <p class="text-inf">Ejercítate en un ambiente dinámico y divertido con rutinas diseñadas para mejorar tu fuerza, resistencia y flexibilidad.</p>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-dumbbell"></i>
+                                        <h3>Clases de<span class="txtrojo"> Crossfit</span></h3>
+                                        <p class="text-inf">Desafía tus límites con entrenamientos intensos y variados que combinan fuerza, cardio y habilidad.</p>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-mitten"></i>
+                                        <h3>Clases de<span class="txtrojo"> Boxeo</span></h3>
+                                        <p class="text-inf">Mejora tu técnica, coordinación y resistencia mientras liberas el estrés con entrenamientos de alto impacto.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <i class="fa-solid fa-person-swimming"></i>
+                                        <h3>Clases de<span class="txtrojo"> Natacion</span></h3>
+                                        <p class="text-inf">Fortalece tu cuerpo y mejora tu salud cardiovascular con ejercicios completos y de bajo impacto.</p>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-heart-circle-bolt"></i>
+                                        <h3>Clases de<span class="txtrojo"> Cardio</span></h3>
+                                        <p class="text-inf">Quema calorías y aumenta tu energía con sesiones llenas de movimiento y diversión.</p>
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-person-biking"></i>
+                                        <h3>Clases de<span class="txtrojo"> Ciclismo</span></h3>
+                                        <p class="text-inf">Disfruta de un entrenamiento desafiante que combina música motivadora con técnicas de pedaleo efectivas.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>   
             </div>
         </section>
 
         <section id="comodidades" class="comodidades">
-            <div class="fila">
-                <div class="col">
-                    <img src="img/nosotros02.jpg" alt="">
-                </div>
-                <div class="col">
-                    <div class="contenedor-titulo">
-                        <div class="numero">03</div>
-                        <div class="info">
-                            <span class="frase">LA MEJOR EXPERIENCIA</span>
-                            <h2>COMODIDADES</h2>
+            <div class="contenedor">
+                <div class="fila">
+                    <div class="col">
+                        <div class="contenedor-titulo">
+                            <div class="numero">03</div>
+                            <div class="info">
+                                <span class="frase">LA MEJOR EXPERIENCIA</span>
+                                <h2>COMODIDADES</h2>
+                            </div>
                         </div>
+                        <ul class="lista-comodidades">
+                            <li><span>PILETA</span> - Disfruta de nuestra piscina climatizada, ideal para entrenamiento, relajación o clases de natación.</li>
+                            <li><span>WIFI GRATIS</span> - Mantente conectado mientras entrenas con nuestra red de internet de alta velocidad.</li>
+                            <li><span>DESCUENTOS EXCLUSIVOS PARA SOCIOS</span> - Equípate con la mejor ropa de gimnasio y suplementos al mejor precio. </li>
+                            <li><span>ESTACIONAMIENTO GRATIS</span> - Olvídate de preocupaciones y aprovecha nuestro amplio estacionamiento sin costo adicional.</li>
+                        </ul>
                     </div>
-                    
-                    <ul>
-                        <li><span>PILETA</span> - Disfruta de nuestra piscina climatizada, ideal para entrenamiento, relajación o clases de natación.</li>
-                        <li><span>WIFI GRATIS</span> - Mantente conectado mientras entrenas con nuestra red de internet de alta velocidad.</li>
-                        <li><span>ESTACIONAMIENTO GRATIS</span> - Olvídate de preocupaciones y aprovecha nuestro amplio estacionamiento sin costo adicional.</li>
-                    </ul>
                 </div>
             </div>
         </section>
-
-        <section class="galeria" id="galeria">
+        
+        <section id="galeria" class="galeria">
             <div class="contenido-seccion">
                 <div class="contenedor-titulo">
                     <div class="numero">04</div>
@@ -188,33 +161,22 @@
                         <h2>GALERIA</h2>
                     </div>
                 </div>
-                <div class="fila">
-                    <div class="col">
-                        <img src="img/gym03.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/gym04.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/gym05.jpg" alt="">
-                    </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="img/gym.jpg" class="d-block w-100" alt="Imagen 1"></div>
+                    <div class="slide"><img src="img/natacion.jpg" class="d-block w-100" alt="Imagen 2"></div>
+                    <div class="slide"><img src="img/ciclismo.jpg" class="d-block w-100" alt="Imagen 3"></div>
+                    <div class="slide"><img src="img/gym07.jpg" class="d-block w-100" alt="Imagen 4"></div>
+                    <div class="slide"><img src="img/gym05.jpg" class="d-block w-100" alt="Imagen 5"></div>
                 </div>
-                <div class="fila">
-                    <div class="col">
-                        <img src="img/boxeo.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/ciclismo.jpg" alt="">
-                    </div>
-                    <div class="col">
-                        <img src="img/natacion.jpg" alt="">
-                    </div>
+                <div class="buttons">
+                    <button class="slider-btn prev" onclick="moverSlide(-1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moverSlide(1)">&#10095;</button>
                 </div>
             </div>
         </section>
-        
 
-        <section class="contacto" id="contacto">
+        <section id="contacto" class="contacto">
             <div class="contenido-seccion">
                 <div class="contenedor-titulo">
                     <div class="numero">05</div>
@@ -247,7 +209,7 @@
                     </div>
                     <div class="col">
                         <i class="fa-solid fa-phone"></i>
-                            1154029784
+                           1154029784
                     </div>
                     <div class="col">
                         <i class="fa-regular fa-clock"></i>
@@ -261,15 +223,9 @@
             <div class="info">
                 <p>2024 <span class="txtrojo">GYM NITRO</span> Todos los derechos reservados</p>
                 <div class="redes">
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
         </footer>
