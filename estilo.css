@@ -15,7 +15,7 @@ body{
     background-color: #dde1e9;
 }
 
-
+/*Menu*/
 .contenedor-header{
     width: 100%;
     position: fixed;
@@ -47,7 +47,6 @@ a{
     color:#ff1133;
 }
 
-/*Nav Menu*/
 .contenedor-header header nav a{
     display: inline-block;
     text-decoration: none;
@@ -65,9 +64,6 @@ a{
     color: #fff;
     display: inline-block;
     padding: 5px 8px;
-}
-.contenedor-header header .redes a:hover{
-    color: #ff1133;
 }
 .nav-responsive{
     display: none;
@@ -148,12 +144,13 @@ a{
     margin: auto;
     height: 100vh;
     background-color: #dde1e9;
-    padding: 100px 20px;
+    padding: 140px 20px;
 }
 
 .nosotros .fila{
     display: flex;
     align-items: center;
+    margin-top: 60px;
 }
 
 .nosotros .fila .col .contenedor-titulo {
@@ -225,6 +222,7 @@ a{
     background-color:#ff1135d0; ;
 }
 
+/*Servicios */
 .servicios, .galeria {
     background: linear-gradient(rgba(0, 12, 35, 0.8), rgba(0, 7, 78, 0.8)), url(img/gymfitness.jpg);
     background-size: cover;
@@ -233,8 +231,6 @@ a{
     color: white; 
     padding: 60px 20px; 
 }
-
-/*Servicios */
 .servicios {
     padding: 100px 20px;
 }
@@ -314,7 +310,7 @@ a{
 
 /*Comodidades*/
 .comodidades {
-    background-color: #c3c6ce;
+    background-color: #c3c6ce00;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -399,6 +395,7 @@ color: #000000;
     padding: 40px 0;
     text-align: center;
     padding: 100px 0;
+
 }
 
 .galeria .contenido-seccion{
@@ -605,26 +602,14 @@ footer .info a{
 }
 
 /*Responsive */
-
-.nav-responsive {
-    display: none;
-    font-size: 25px;
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
     header nav {
-        position: initial;
-        display: none;
-        transform: translate(0);
-    }
-
-    header .redes {
         display: none;
     }
 
     .nav-responsive {
         display: block;
-        font-size: 25px;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -632,6 +617,7 @@ footer .info a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         position: absolute;
         left: 0;
         top: 0;
@@ -642,136 +628,137 @@ footer .info a{
     }
 
     nav.responsive a {
-        display: block;
-        width: fit-content;
-        margin: 10px auto;
-        font-size: 15px;
+        font-size: 14px;
+        margin: 8px 0;
     }
 
     .inicio .opciones {
         display: none;
     }
 
-    .nosotros .fila {
+    .nosotros {
+        min-height: 100vh; 
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: center;
+        padding: 40px 20px; 
+        box-sizing: border-box;
     }
-
-    .nosotros .fila .contenedor-titulo {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .nosotros .fila .contenedor-titulo .numero {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .nosotros .fila .contenedor-titulo .info h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
-    .nosotros .fila .contenedor-titulo .info .frase {
+    .nosotros .fila .contenedor-titulo .info .frase,
+    .fila-nosotros .col1 .frase{
         font-size: 20px;
+    
     }
 
-    .nosotros .fila .col p {
-        font-size: 12px;
-        line-height: 20px;
-        margin: 10px 0;
-        text-align: center;
+    .fila-nosotros .col1 {
+        text-align: left;
+        flex: 2; 
+        margin-top: 5%;
     }
-
-    .fila-nosotros {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
+    
     .fila-nosotros .col1 h2 {
-        font-size: 1.8rem;
+        font-size: 16px;
+        margin-top: 5%;
+        margin-left: 12px; 
+       
     }
-
-    .fila-nosotros .col1 .frase {
-        font-size: 1rem;
-    }
-
-    .fila-nosotros .col2 button {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    .comodidades .fila {
+    
+    .fila-nosotros .col2 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: flex-end; 
+        flex: 1; 
+       
+    }
+    .fila-nosotros .col2 button {
+        font-size: 12px;
+        padding: 8px 10px;
+        align-self: center; 
+        margin-right: 15px; 
+        margin-top: 12%;
+    }
+    .servicios .contenedor-titulo h2 {
+        font-size: 45px; 
+       
+    }
+    
+    .servicios .info-servicios td {
+        font-size: 10px; 
+        padding: 10px; 
     }
 
-    .comodidades .fila .col {
+    .servicios .info-servicios table {
         width: 100%;
-        text-align: center;
+        display: block;
+        overflow-x: auto; 
+    }
+    .contacto .fila .col {
+        width: 100%;
+        margin-bottom: 15px;
     }
 
-    .comodidades .fila .col img {
-        max-width: 100%;
-        height: auto;
+    .contacto .fila-datos .col {
+        margin-bottom: 15px;
+    }
+
+    .comodidades{
+        padding: 140px 20px;
+    }
+    .comodidades .contenedor-titulo{
+        margin-top: -5%;
+    }
+    .lista-comodidades li {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .lista-comodidades li span {
+        font-size: 23px;
+    }
+    .galeria{
+        padding: 180px 20px;
+    }
+
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .contacto .contenedor-titulo .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contacto form {
+        padding: 15px;
     }
 
     .contacto .fila {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contacto .fila .col {
-        width: 100%;
-        margin-bottom: 20px;
+        flex-direction: column; 
+        gap: 10px;
     }
 
     .contacto .fila-datos {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .contacto .fila-datos .col {
-        margin-bottom: 20px;
+        font-size: 14px;
     }
 
-    footer .info {
-        display: flex;
+    footer .info{
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .servicios .contenedor-titulo {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .servicios .contenedor-titulo .numero {
-        margin-bottom: 10px;
-    }
-
-    .servicios .info-servicios table {
-        width: 90%;
-    }
-
-    .servicios .info-servicios td {
-        width: 90%;
-        padding: 25px;
-        box-sizing: border-box;
-    }
-
-    .servicios .info-servicios h3 {
-        font-size: 20px;
-    }
-
-    .servicios .info-servicios .text-inf {
-        font-size: 14px;
-    }
 }
 
